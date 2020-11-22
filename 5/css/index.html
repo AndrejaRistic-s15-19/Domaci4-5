@@ -1,0 +1,307 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*:focus {
+  outline: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: "0 auto";
+  padding: 0px;
+}
+/* Header */
+header .bnavbar {
+  display: inherit;
+}
+header .bnavbar .logo {
+  height: 65px;
+  float: right;
+}
+header .bnavbar ul {
+  margin: 0px;
+  padding: 20px;
+  padding-left: 0px;
+  background-color: #333333;
+}
+header .bnavbar ul a .first {
+  background-color: #f37804;
+}
+header .bnavbar ul a li {
+  display: inherit;
+  font-size: 20px;
+  margin: 0px;
+  padding: 20px;
+  color: white;
+}
+header .snavbar {
+  display: none;
+  background-color: #333333;
+  height: 60px;
+  grid-template-columns: repeat(3, calc(100% / 3));
+}
+header .snavbar .levo .ikonica {
+  cursor: pointer;
+}
+header .snavbar .levo .ikonica i {
+  color: #f37804;
+  font-size: 30px;
+  margin: 15px;
+  padding: 0px;
+}
+header .snavbar .levo .dropdown-content {
+  display: none;
+  list-style-type: none;
+  width: 65%;
+  margin: 0px;
+  padding: 5px;
+  background-color: #333333;
+  color: white;
+  border: solid white thin;
+}
+header .snavbar .levo .dropdown-content ul li {
+  padding: 3px;
+  text-decoration: underline #f37804;
+  text-align: center;
+}
+header .snavbar .sredina {
+  font-size: 20px;
+  text-align: center;
+  background-color: #f37804;
+  color: white;
+  height: 60px;
+}
+header .snavbar .sredina p {
+  margin: 20px;
+}
+.forma {
+  background-color: #bdbdbd;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.forma h1 {
+  color: #f37804;
+}
+.forma .wrapper div {
+  width: 300px;
+  text-align: right;
+  margin: 5px auto;
+}
+.forma .wrapper div select {
+  width: 150px;
+}
+.forma button {
+  margin: 0px;
+  padding: "2px 5px";
+  border-radius: 10px;
+}
+.sforma {
+  background-color: #bdbdbd;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  display: none;
+}
+.sforma h1 {
+  color: #f37804;
+}
+.sforma .wrapper div {
+  display: none;
+  padding: 5px;
+  text-align: center;
+}
+.sforma .wrapper select {
+  width: 152px;
+  text-align: center;
+}
+.sforma .wrapper input {
+  text-align: center;
+}
+/* Proizvodi */
+.proizvodi {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #bdbdbd;
+  text-align: center;
+}
+.proizvodi h1 {
+  color: #f37804;
+}
+.proizvodi .wrapper {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(4, 25%);
+  margin: 0px 5px;
+}
+.proizvodi .wrapper div h3 {
+  font-size: 16px;
+  padding: 5px;
+  color: #333333;
+}
+.proizvodi .wrapper div a img {
+  width: calc(100% - 10px);
+}
+.proizvodi .wrapper div .shop {
+  margin: 0px 5px;
+}
+.proizvodi .wrapper div .shop input {
+  width: 30%;
+}
+/* Vesti */
+.vesti {
+  background-color: #dadada;
+  width: 50%;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.vesti .vesti-grid {
+  margin: 10px;
+  padding: 10px;
+  border: #8d8d8d solid thin;
+  border-radius: 10px;
+}
+.vesti .vesti-grid .center {
+  margin: auto;
+  padding: 0px 10px;
+  display: inline;
+}
+.vesti .vesti-grid .center img {
+  float: right;
+}
+.vesti .vesti-grid .center a {
+  text-decoration: none;
+}
+.vesti .vesti-grid .center h3 {
+  color: #584029;
+  text-align: left;
+}
+.vesti .vesti-grid .center h3:hover {
+  color: #0d44fc;
+}
+.vesti .vesti-grid .center p {
+  color: black;
+}
+/* Footer */
+footer {
+  background-color: #333333;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+footer p {
+  color: white;
+  font-size: 20pt;
+}
+/* Opste */
+h2 {
+  color: #f37804;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+button {
+  background-color: darkgrey;
+  border-radius: 10px;
+  padding: 2px 5px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 1750px) {
+  .proizvodi .wrapper .shop input {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .proizvodi .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .proizvodi .wrapper {
+    grid-template-columns: repeat(2, 50%);
+  }
+  .proizvodi .wrapper div a img {
+    width: 100%;
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .proizvodi {
+    width: 65%;
+  }
+  .vesti {
+    width: 65%;
+  }
+  footer p {
+    color: white;
+    font-size: 16pt;
+  }
+  .kontakt .poruka button {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .proizvodi {
+    width: 75%;
+  }
+  .proizvodi .wrapper {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .proizvodi .wrapper div a {
+    width: 100%;
+  }
+  .proizvodi .wrapper div a img {
+    width: 85%;
+  }
+  .proizvodi .wrapper .shop input {
+    width: 10%;
+  }
+  .bnavbar {
+    display: none !important;
+  }
+  .snavbar {
+    display: grid !important;
+  }
+  .snavbar .desno img {
+    height: 60px;
+    float: right;
+  }
+  .forma {
+    display: none;
+  }
+  .sforma {
+    display: inherit;
+  }
+  .vesti {
+    width: 75%;
+  }
+  footer p {
+    color: white;
+    font-size: 12pt;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bnavbar {
+    display: none;
+  }
+  .snavbar {
+    display: grid !important;
+    grid-template-columns: 1fr 2fr 1fr !important;
+  }
+  .snavbar .sredina p {
+    margin: auto;
+    font-size: 18px;
+  }
+  .snavbar .levo .dropdown-content {
+    font-size: 14px;
+  }
+}

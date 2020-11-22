@@ -1,0 +1,51 @@
+.onama h1 {
+  text-align: center;
+}
+.onama .opis {
+  text-align: justify;
+  width: 60%;
+  margin: 10px auto;
+}
+@media screen and (max-width: 1330px) {
+  .onama .opis {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .onama .opis {
+    width: 60%;
+  }
+}
+.galerija {
+  width: 60%;
+  margin: 0 auto;
+}
+.galerija .wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  gap: 10px;
+}
+.galerija .wrapper img {
+  width: 100%;
+}
+@media screen and (max-width: 1750px) {
+  .galerija .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1330px) {
+  .galerija {
+    width: 70%;
+  }
+  .galerija .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 820px) {
+  .galerija {
+    width: 60%;
+  }
+  .galerija .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
